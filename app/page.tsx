@@ -11,7 +11,7 @@ const Home = async () => {
   
   return (
     <>
-      <section className='md:px-20'>
+      <section className='px-5'>
         <div className='flex max-xl:flex-col gap-16'>
           <div className="flex flex-col justify-center">
             
