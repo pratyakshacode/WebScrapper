@@ -17,7 +17,8 @@
 
 @layer utilities {
   .btn {
-    @apply py-4 px-4 bg-secondary hover:bg-opacity-70 rounded-[30px] text-white text-lg font-semibold;
+    @apply py-4 px-4 hover:bg-opacity-70 rounded-[30px] text-white text-lg font-semibold;
+    background: linear-gradient(45deg, aqua, rgb(85, 5, 150))
   }
 
   .head-text {
@@ -40,6 +41,21 @@
     @apply relative sm:px-10 py-5 sm:pt-20 pb-5 max-w-[560px] h-[700px] w-full bg-[#F2F4F7] rounded-[30px] sm:mx-auto;
   }
 
+  .hero-carousel::before{
+    content: "";
+            position: absolute;
+            /* background: red; */
+            inset: 0;
+            z-index: -1;
+            /* transform: translateY(10px); */
+            border-radius: inherit;
+            filter: blur(15px);
+            background: linear-gradient(135deg,transparent,rgb(1, 67, 84), rgb(75, 1, 84));
+
+    
+   
+    
+  }
   .carousel {
     @apply flex flex-col-reverse h-[700px];
   }
@@ -113,6 +129,8 @@
   /* NAVBAR */
   .nav {
     @apply flex justify-between items-center px-6 md:px-20 py-4;
+    background: linear-gradient(45deg, rgb(34 208 230), rgb(92 3 105));    margin-bottom: 20px;
+    /* color: white; */
   }
 
   .nav-logo {
@@ -147,6 +165,25 @@
   }
 
   .searchbar-btn {
-    @apply bg-gray-900 border border-gray-900 rounded-lg shadow-xs px-5 py-3 text-white text-base font-semibold hover:opacity-90 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-40;
+    @apply bg-gray-900 rounded-lg shadow-xs px-5 py-3 text-white text-base font-semibold hover:opacity-90 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-40;
+    background-color: rgb(56, 2, 92);
+    border: 0px;
   }
 }
+
+
+.nav-logo-span {
+  color: rgb(87, 1, 130);
+}
+.nav-logo-span2 {
+  color: rgb(6, 134, 151)
+}
+.nav-logo-main{
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.invert-icon{
+  filter: invert(1);
+}
+
